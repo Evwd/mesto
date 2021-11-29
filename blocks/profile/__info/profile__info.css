@@ -1,14 +1,13 @@
 .profile__info {
     margin: 0;
-    margin-left: 30px;
-    margin: 0 0 0 30px;
-    padding: 0;
-    max-width: 500px;
+    max-width: px;
     display: grid;
     grid-template-rows: max-content min-content;
-    grid-template-columns: max-content min-content;
-    row-gap: 16px;
-    column-gap: 18px;
+    grid-template-columns: repeat(2, minmax(min-content, min-content));
+    row-gap: 8px;
+    column-gap: 13px;
+    align-items: center;
+    align-content: center;
 }
 
 @media screen and (max-width: 768px) {

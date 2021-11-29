@@ -1,21 +1,24 @@
 .profile__edit-button {
+    box-sizing: border-box;
     padding: 0;
     width: 24px;
     height: 24px;
     background-color: #000000;
-    background-image: url(../../../images/profile__edit-btn.svg);
+    background-image: url(../../../images/edit-button.svg);
     background-repeat: no-repeat;
     border: 1px solid white;
-    align-self: center;
-    box-sizing: border-box;
+    align-items: center;
     cursor: pointer;
+    margin-top: 2px;
+    background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
     .profile__edit-button {
+        background-image: url(../../../images/edit-button.svg);
         width: 18px;
         height: 18px;
-        justify-self: start;
         margin: 0;
+        padding: 0;
     }
 }

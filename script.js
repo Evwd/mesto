@@ -1,34 +1,40 @@
-const popupOpenBtn = document.querySelector('.profile__edit-btn');
+/*Постоянные значения*/
+const popupOpenButton = document.querySelector('.profile__edit-button');
 const popup = document.querySelector('.popup');
-const popupCloseBtn = document.querySelector('.popup__close-btn');
-let userName = document.querySelector('.profile__username');
-let popupName = document.querySelector('.popup__username-text');
-const submitBtn = document.querySelector('.popup__submit-btn');
-let userInfo = document.querySelector('.profile__user-info');
-let popupInfo = document.querySelector('.popup__text');
-const overlay = document.querySelector('.popup__overlay');
+const popupCloseButton = document.querySelector('.popup__close-button');
+const background = document.querySelector('.popup__background');
+const submitButton = document.querySelector('.popup__submit-button');
 
+/*Переменные значения*/
+let profilName = document.querySelector('.profile__name');
+let popupName = document.querySelector('.popup__username-text');
+let profilDesk = document.querySelector('.profile__description');
+let popupInfo = document.querySelector('.popup__text');
+
+/*Присваиваем данные для формы*/
 popupName.value = 'Жак-Ив Кусто';
 popupInfo.value = 'Исследователь океана';
 
-
+/*Открытие формы*/
 function openPopup() {
-    popup.classList.add('popup_active');
+    popup.classList.add('popup_opened');
     popupName.value;
     popupInfo.value;
 }
-
-function closePopup() {
-    popup.classList.remove('popup_active');
-}
-
-
+/*Передача новых данных из формы на страницу*/
 function formSubmitHandler() {
-    userName.textContent = popupName.value;
-    userInfo.textContent = popupInfo.value;
+    profilName.textContent = popupName.value;
+    profilDesk.textContent = popupInfo.value;
 }
-popupOpenBtn.addEventListener('click', openPopup);
-popupCloseBtn.addEventListener('click', closePopup);
-submitBtn.addEventListener('click', formSubmitHandler);
-submitBtn.addEventListener('click', closePopup);
-overlay.addEventListener('click', closePopup);
+
+/*Закрытие формы*/
+function closePopup() {
+    popup.classList.remove('popup_opened');
+}
+
+/*Обработчики нажатия*/
+background.addEventListener('click', closePopup);
+popupOpenButton.addEventListener('click', openPopup);
+popupCloseButton.addEventListener('click', closePopup);
+submitButton.addEventListener('enter', formSubmitHandler);
+submitButton.addEventListener('click', closePopup);

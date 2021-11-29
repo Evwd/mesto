@@ -1,0 +1,12 @@
+.popup {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+}
