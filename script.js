@@ -21,10 +21,13 @@ function openPopup() {
     popupName.value;
     popupInfo.value;
 }
+
 /*Передача новых данных из формы на страницу*/
 function formSubmitHandler() {
     profilName.textContent = popupName.value;
+    console.log(popupName.value)
     profilDesk.textContent = popupInfo.value;
+    console.log(profilName);
 }
 
 /*Закрытие формы*/
@@ -36,5 +39,5 @@ function closePopup() {
 background.addEventListener('click', closePopup);
 popupOpenButton.addEventListener('click', openPopup);
 popupCloseButton.addEventListener('click', closePopup);
-submitButton.addEventListener('enter', formSubmitHandler);
+submitButton.addEventListener('click', formSubmitHandler);
 submitButton.addEventListener('click', closePopup);
