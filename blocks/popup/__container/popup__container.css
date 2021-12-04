@@ -4,9 +4,8 @@
     background-color: white;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    z-index: 10;
+    z-index: 5;
     max-width: 430px;
-    min-height: 330px;
     width: 100%;
     margin: 195px auto 0;
 }
@@ -14,7 +13,6 @@
 @media screen and (max-width: 600px) {
     .popup__container {
         max-width: 282px;
-        max-height: 322px;
         margin: 123px auto 0;
     }
 }

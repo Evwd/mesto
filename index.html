@@ -20,74 +20,75 @@
                     <div class="profile__avatar"></div>
                     <div class="profile__info">
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <button class="profile__edit-button blackout"></button>
+                        <button class="profile__edit-button" type="button"></button>
                         <p class="profile__description">Исследователь океана</p>
                     </div>
                 </div>
-                <button class="profile__add-button blackout"></button>
+                <button class="profile__add-button" type="button"></button>
             </section>
             <section class="places">
-                <div class="place">
+                <article class="place">
                     <img class="place__image" src="./images/image_1.jpg" alt="Фото Карачаевск">
                     <div class="place__signature">
                         <h2 class="place__info">Карачаевск</h2>
-                        <button class="place__like-button blackout"></button>
+                        <button class="place__like-button" type="button"></button>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <img class="place__image" src="./images/image_2.jpg" alt="Фото Гора Эльбрус">
                     <div class="place__signature">
                         <h2 class="place__info">Гора Эльбрус</h2>
-                        <button class="place__like-button blackout"></button>
+                        <button class="place__like-button" type="button"></button>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <img class="place__image" src="./images/image_3.jpg" alt="Фото Домбай">
                     <div class="place__signature">
                         <h2 class="place__info">Домбай</h2>
-                        <button class="place__like-button blackout"></button>
+                        <button class="place__like-button" type="button"></button>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <img class="place__image" src="./images/image_2.jpg" alt="Фото Горы Эльбрус">
                     <div class="place__signature">
                         <h2 class="place__info">Гора Эльбрус</h2>
-                        <button class="place__like-button blackout"></button>
+                        <button class="place__like-button" type="button"></button>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <img class="place__image" src="./images/image_3.jpg" alt="Фото Домбай">
                     <div class="place__signature">
                         <h2 class="place__info">Домбай</h2>
-                        <button class="place__like-button blackout"></button>
+                        <button class="place__like-button" type="button"></button>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <img class="place__image" src="./images/image_1.jpg" alt="Фото Карачаево-Черкесская Республика">
                     <div class="place__signature">
                         <h2 class="place__info">Карачаево-Черкесскаая Республика</h2>
-                        <button class="place__like-button blackout" type="button"></button>
+                        <button class="place__like-button " type="button"></button>
                     </div>
-                </div>
+                </article>
             </section>
             <section class="popup">
-                <div class="popup__background"></div>
                 <div class="popup__container">
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input type="text" placeholder="" class="popup__username-text">
-                    <input type="text" placeholder="" class="popup__text">
-                    <button class="popup__submit-button blackout">Сохранить</button>
-                    <button class="popup__close-button blackout"></button>
+                    <form name="popup-form">
+                        <input name="profil-name" class="popup__inpu" type="text">
+                        <input name="profil-desk" class="popup__input" type="text">
+                        <button class="popup__submit-button" type="submit">Сохранить</button>
+                    </form>
+                    <button class="popup__close-button" type="button"></button>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <h2 class="footer__copyright">
+            <p class="footer__copyright">
                 &copy; 2021 Mesto Russia
-            </h2>
+            </p>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

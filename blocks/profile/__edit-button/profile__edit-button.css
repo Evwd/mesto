@@ -3,22 +3,26 @@
     padding: 0;
     width: 24px;
     height: 24px;
-    background-color: #000000;
-    background-image: url(../../../images/edit-button.svg);
+    background-image: url(../../../images/pencil.svg);
+    background-color: Transparent;
+    background-position: center;
     background-repeat: no-repeat;
     border: 1px solid white;
     align-items: center;
     cursor: pointer;
     margin-top: 2px;
-    background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
     .profile__edit-button {
-        background-image: url(../../../images/edit-button.svg);
         width: 18px;
         height: 18px;
         margin: 0;
-        padding: 0;
+        background-size: 7.5px;
     }
+}
+
+.profile__edit-button:hover {
+    opacity: 0.6;
+    transition: opasity 0.5s linear;
 }

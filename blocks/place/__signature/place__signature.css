@@ -1,8 +1,8 @@
 .place__signature {
     max-width: 246px;
-    height: 79px;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 31px;
     display: flex;
     justify-content: space-between;
     align-items: center;
