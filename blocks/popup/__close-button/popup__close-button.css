@@ -4,14 +4,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
     width: 32px;
     height: 32px;
     position: relative;
     bottom: 338px;
     left: 438px;
     cursor: pointer;
-    background-color: Transparent;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 600px) {
