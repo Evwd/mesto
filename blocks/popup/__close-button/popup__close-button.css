@@ -11,6 +11,7 @@
     bottom: 338px;
     left: 438px;
     cursor: pointer;
+    background-color: Transparent;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,34 +1,30 @@
-/*Постоянные значения*/
 const popupOpenButton = document.querySelector('.profile__edit-button');
-const popup = document.querySelector('.popup');
 const popupCloseButton = document.querySelector('.popup__close-button');
+const popup = document.querySelector('.popup');
+const popupform = document.querySelector('#popup-form');
 
-
-/*Переменные значения*/
+let popupName = document.querySelector('.popup__input_type_user-name');
+let popupInfo = document.querySelector('.popup__input_type_user-info');
 let profilName = document.querySelector('.profile__name');
-let popupName = document.querySelector('.popup__input');
 let profilDesk = document.querySelector('.profile__description');
-let popupInfo =
 
-    /*Открытие формы*/
-    function openPopup() {
-        popup.classList.add('popup_opened');
-        popupName.value = profilName.textContent;
-        popupInfo.value = profilDesk.textContent;
-    }
-
-function formSubmitHandler(evt) {
-    evt.preventDefault();
-    profilName.textContent = popupName.value;
-    profilInfo.textContent = popupInfo.value;
-    closePopup();
+function openPopup() {
+    popup.classList.add('popup_opened');
+    popupName.value = profilName.textContent;
+    popupInfo.value = profilDesk.textContent;
 }
 
-/*Закрытие формы*/
 function closePopup() {
     popup.classList.remove('popup_opened');
 }
 
-/*Обработчики нажатия*/
+function formSubmitHandler(evt) {
+    evt.preventDefault();
+    profilName.textContent = popupName.value;
+    profilDesk.textContent = popupInfo.value;
+    closePopup();
+}
+
 popupOpenButton.addEventListener('click', openPopup);
 popupCloseButton.addEventListener('click', closePopup);
+popupform.addEventListener('submit', formSubmitHandler);

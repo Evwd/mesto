@@ -73,9 +73,9 @@
             <section class="popup">
                 <div class="popup__container">
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <form name="popup-form">
-                        <input name="profil-name" class="popup__inpu" type="text">
-                        <input name="profil-desk" class="popup__input" type="text">
+                    <form name="form-popup" id="popup-form" method="get" action="#">
+                        <input name="profil-name" class="popup__input popup__input_type_user-name" type="text">
+                        <input name="profil-desk" class="popup__input popup__input_type_user-info" type="text">
                         <button class="popup__submit-button" type="submit">Сохранить</button>
                     </form>
                     <button class="popup__close-button" type="button"></button>
