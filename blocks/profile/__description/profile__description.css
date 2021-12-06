@@ -16,7 +16,7 @@
     .profile__description {
         font-size: 14px;
         line-height: 17px;
-        text-align: center;
+        text-align: right;
         max-width: 218px;
     }
 }

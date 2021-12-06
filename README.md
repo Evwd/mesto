@@ -1,10 +1,11 @@
 # Проект: Место
 ## Ссылка на проект https://evwd.github.io/mesto/
+
+
 ### Обзор
 ###### Остальные важные части файла README я допишу позже, сейчас очень хочется получить обратную связь по работе и исправить недочеты ) ) 
 
-**Figma**
+![Превью проекта](https://github.com/Evwd/mesto/blob/main/images/maket.png "Превью")
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
 
 
